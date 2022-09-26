@@ -1,0 +1,7 @@
+[debug]
+port = 13000
+
+[release]
+address = "0.0.0.0"
+port = 13000
+workers = 2

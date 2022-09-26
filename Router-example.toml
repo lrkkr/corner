@@ -1,0 +1,27 @@
+[app]
+
+    [[app.wan]]
+    icon = "fa-solid fa-note-sticky"
+    title = "note"
+    url = "https://note.example.com"
+
+    [[app.wan]]
+    icon = "fa-solid fa-code-branch"
+    title = "git"
+    url = "https://git.example.com"
+
+    [[app.lan]]
+    icon = "fa-solid fa-cloud-arrow-down"
+    title = "tor"
+    url = "http://localhost:3100/"
+
+[mark]
+
+    [[mark.list]]
+
+        name = "VIDEO"
+
+        [[mark.list.link]]
+        icon = "fa-solid fa-tv"
+        title = "bilibili"
+        url = "https://www.bilibili.com/"

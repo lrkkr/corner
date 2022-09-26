@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>corner</title>
+    <link rel="shortcut icon" href="/static/img/letter-c.png" />
+    <link href="/static/css/style.css" rel="stylesheet">
+    <link href="/static/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>corner</h1>
+    </header>
+    <main>
+        <div id="app">
+            <h2>APPLICATIONS</h2>
+            <h3>WAN</h3>
+            <div class="container">
+                {% for link in app.wan %}
+                <div class="card">
+                    <i class="{{ link.icon }}"></i>
+                    <a href="{{ link.url }}">{{ link.title }}</a>
+                </div>
+                {% endfor %}
+            </div>
+            <h3>LAN</h3>
+            <div class="container">
+                {% for link in app.lan %}
+                <div class="card">
+                    <i class="{{ link.icon }}"></i>
+                    <a href="{{ link.url }}">{{ link.title }}</a>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        <div id="mark">
+            <h2>BOOKMARKS</h2>
+            <div class="container">
+                {% for list in mark.list %}
+                <div class="list">
+                    <h3>{{ list.name }}</h3>
+                    {% for link in list.link %}
+                    <div class="card">
+                        <i class="{{ link.icon }}"></i>
+                        <a href="{{ link.url }}">{{ link.title }}</a>
+                    </div>
+                    {% endfor %}
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
