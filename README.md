@@ -2,6 +2,8 @@
 
 A minimalist start page written in Rust.
 
+![screenshot](./screenshot.png)
+
 ## installation
 
 * Make sure Rust is installed.
