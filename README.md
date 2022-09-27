@@ -4,7 +4,7 @@ A minimalist start page written in Rust.
 
 ![screenshot](./screenshot.png)
 
-## installation
+## Installation
 
 * Make sure Rust is installed.
 
@@ -34,7 +34,7 @@ Add links and names according to [toml syntax](https://toml.io/en/) and examples
 
 Icons can be find in [fontawesome](https://fontawesome.com/), representing by class names.
 
-## run
+## Run
 
 ```bash
 ./target/release/corner
